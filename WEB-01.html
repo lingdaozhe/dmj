@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>网页设计学习例01</title>
+</head>
+<body>
+<!--
+	<canvas id="myCanvas" width="1500" height="500" style="border:5px solid #cfcccc;">
+	</canvas>
+	<script>
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle="#FFF000";
+		ctx.fillRect(0,0,750,500);
+		ctx.fillStyle="#000FFF";
+		ctx.fillRect(900,0,1500,500);
+		ctx.font="30px 宋体";
+		ctx.fillStyle="#FF0000";
+		ctx.fillText("开始学习网页制作AAAAAAAAAAAA",550,250);
+		ctx.moveTo(0,0);
+		ctx.lineTo(1500,500); 
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.arc(750,250,100,0,2*Math.PI); 
+		ctx.stroke();
+	</script>
+	<hr>
+	<canvas id="myCanvas_1" width="1500" height="100" style="border:5px solid #cfcccc;">
+	</canvas>
+	<script>
+		var d=document.getElementById("myCanvas_1");
+		var ctx=d.getContext("2d");
+		// Create gradient
+		var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+		// Fill with gradient
+		ctx.fillStyle=grd;
+		ctx.fillRect(10,10,150,80);
+	</script>
+	<p>Image to use:</p>
+	<img id="scream" src="源文件/图片1.jpg" >
+	<p>______________________</p>
+	<canvas id="myCanvas_2" width="250" height="300" style="border:1px solid #d3d3d3;">
+	</canvas>
+	<script>
+		var c=document.getElementById("myCanvas_2");
+		var ctx=c.getContext("2d");
+		var imgw=document.getElementById("scream");
+		
+		imgw.onload = function() {
+			ctx.drawImage(imgw,10,10);
+		} 
+	</script>
+	<svg xmlns="TT" height="500">
+	   <polygon points="100,10 40,180 190,60 10,60 160,180"
+	   style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;">
+	</svg>
+	<hr>
+	<h1 align="center">光明</h1>
+	<p align="center">在黑暗中寻找光明</p>
+	<p align="center">在光明中走向黑暗</p>
+	<hr>
+	<!--   元素   
+	元素 <br>
+	<b>加粗了</b><br>
+	<i>文字斜了</i><br>
+	<u>下划线</u><br>
+	<q>双引号</q><br>
+	<mark>标记</mark><br>
+	<time>2018-3-18</time><br>
+	2018年3月18日
+-->
+<!--    table的使用   -->
+
+	<table border="1">
+		<tr><th>单元格</th><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+	</table>
+<br>
+<table border="3">
+		<tr><th colspan="3">单元格</th></tr>
+		<tr><th rowspan="3" >单元格</th><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td></tr>
+		<tr><td>单元格</td><td>单元格</td><td>单元格</td></tr>
+	</table>
+<hr>
+	<table border="3">
+		<colgroup span="1" style="background:#00CC33" </colgroup>
+		<thead>
+			<tr><th colspan="3">标题</th></tr>
+		</thead>
+		<tbody style="background:#999999">
+			<tr><th rowspan="3" >单元格</th><td>单元格</td><td>单元格</td></tr>
+			<tr><td>单元格</td><td>单元格</td></tr>
+			<tr><td>单元格</td><td>单元格</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><th>备注：</th><td colspan="2"></td></tr>
+		</tfoot>
+	</table>
+<!--    table的使用   -->
+
+
+
+
+	
+</body>
+</html>
